@@ -57,14 +57,50 @@
         .chat-button:active {
             transform: scale(0.98);
         }
+        .platforms-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .platforms-section h2 {
+            color: #f2c94c;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .platforms-section p {
+            color: #ccc;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .platform-link {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .platform-link:hover {
+            color: #f2c94c;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>¡Bienvenido al Casino!</h1>
+        <h1>¡Bienvenidos a Golden Magic!</h1>
         <p>Para resolver tus dudas o <span class="highlight">cargar saldo</span>, haz clic en el botón de abajo para iniciar el chat con nosotros.</p>
         <button class="chat-button" onclick="abrirChat()">💬 Habla con Nosotros</button>
     </div>
+
+    <!-- Start of Platforms Section -->
+    <div class="platforms-section">
+        <h2>🌟 Plataformas</h2>
+        <p>¡Descubre nuestras plataformas! 🚀</p>
+        <p><strong>Regalamonedas</strong> te triplica todas tus cargas 💸 y te ofrece una experiencia única. <a href="https://regalamonedas.net" class="platform-link" target="_blank">¡Regalamonedas! 🏆</a></p>
+        <p><strong>Ganamos</strong> cuenta con casino en vivo 🎰, juegos emocionantes y más. <a href="https://www.ganamos.bet/home" class="platform-link" target="_blank">¡Ganamos! 💰</a></p>
+    </div>
+    <!-- End of Platforms Section -->
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
