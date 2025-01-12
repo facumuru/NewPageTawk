@@ -1,79 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino Online - Chat Automático</title>
+    <title>Chat con Nosotros</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1c1c1c;
-            color: #fff;
-            margin: 0;
-            padding: 0;
             text-align: center;
-        }
-        header {
-            background-color: #f39c12;
+            background-color: #1a1a1a;
+            color: #fff;
             padding: 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
         }
         .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #222;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
             padding: 20px;
+            background-image: url('https://example.com/casino-background.jpg'); /* Agrega una imagen de fondo relacionada con casino */
+            background-size: cover;
+        }
+        h1 {
+            color: #f2c94c;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        p {
+            color: #ccc;
+            font-size: 18px;
+        }
+        .highlight {
+            color: #e74c3c;  /* Color rojo brillante */
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: underline;
         }
         .chat-button {
-            margin: 20px auto;
-            max-width: 400px;
-            background-color: #333;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .chat-button button {
-            width: 100%;
-            background-color: #4caf50;
+            background-color: #e74c3c;
             color: white;
             border: none;
-            padding: 15px;
+            padding: 15px 20px;
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
-        .chat-button button:hover {
-            background-color: #45a049;
+        .chat-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+        .chat-button:active {
+            transform: scale(0.98);
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>¡Bienvenido a nuestro Casino Online!</h1>
-    </header>
-
     <div class="container">
-        <!-- Chat Button -->
-        <div class="chat-button">
-            <h2>Habla con nuestro cajero</h2>
-            <p>Presiona el botón para iniciar el chat automáticamente:</p>
-            <button onclick="openChat()">💬 Habla con nosotros</button>
-        </div>
+        <h1>¡Bienvenido al Casino!</h1>
+        <p>Para resolver tus dudas o <span class="highlight">cargar saldo</span>, haz clic en el botón de abajo para iniciar el chat con nosotros.</p>
+        <button class="chat-button" onclick="abrirChat()">💬 Habla con Nosotros</button>
     </div>
 
     <!--Start of Tawk.to Script-->
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/67831b2a49e2fd8dfe063c97/1ihc24852';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/67831b2a49e2fd8dfe063c97/1ihc24852';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+        // Función para abrir directamente el chat
+        function abrirChat() {
+            if (typeof Tawk_API !== "undefined") {
+                Tawk_API.maximize();
+            } else {
+                alert("El chat aún no está disponible. Por favor, espera unos segundos e inténtalo nuevamente.");
+            }
+        }
     </script>
     <!--End of Tawk.to Script-->
 </body>
